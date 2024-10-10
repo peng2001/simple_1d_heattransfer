@@ -1,7 +1,10 @@
 ﻿# Simple model for 1D heat transfer
 
 1D heat transfer equation used: ${dT\over dt} = α \left({d^2T\over dx^2} + {\dot{e}_{gen}\over k}\right)$
-Discretised in x and in time
+
+- Discretised in x and in time
+
+- Graphs temperature as a function of x and time
 
 ## To Run Model:
 - Change model settings in config.toml
