@@ -8,6 +8,8 @@
 
 ## To Run Model:
 - Packages required: numpy, toml
+  - ```python -m pip install toml```
+  - ```python -m pip install numpy```  
 - Change model settings in config.toml
 - Run ```python run.py```
 <br>
