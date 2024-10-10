@@ -7,6 +7,7 @@
 - Graphs temperature as a function of x and time
 
 ## To Run Model:
+- Packages required: numpy, toml
 - Change model settings in config.toml
 - Run ```python run.py```
 <br>
