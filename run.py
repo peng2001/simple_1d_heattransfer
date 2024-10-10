@@ -1,7 +1,6 @@
 import toml
 import model
 import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
 import numpy as np
 
 def config_import(): 
