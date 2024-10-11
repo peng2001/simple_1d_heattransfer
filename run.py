@@ -22,9 +22,9 @@ def graphing_3d(temperatures_list, time_record, cells_list):
     # Adding axis labels
     ax.set_xlabel('x (m)')
     ax.set_ylabel('Time (s)')
-    ax.set_zlabel('Temperature')
-    plt.show()
+    ax.set_zlabel('Temperature (Degrees C)')
     ax.set_title('1D Temperature')
+    plt.show()
 
 
 if __name__ == "__main__":
