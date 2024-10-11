@@ -7,13 +7,13 @@
 - Graphs temperature as a function of x and time
 
 ## To Run Model:
+- Run ```python run.py``` to run model and graph
+- Configure model by editing config.toml in text editor
 - Packages required: numpy, toml
 
   Install packages with:
+  - ```python -m pip install numpy```
   - ```python -m pip install toml```
-  - ```python -m pip install numpy```  
-- Configure model by editing config.toml in text editor
-- Run ```python run.py``` to run model and graph
 <br>
   
 - Access the simulation results data in ```temperatures_C``` variable in the main code in run.py
