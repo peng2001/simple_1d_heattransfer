@@ -8,10 +8,12 @@
 
 ## To Run Model:
 - Packages required: numpy, toml
+
+  Install packages with:
   - ```python -m pip install toml```
   - ```python -m pip install numpy```  
-- Change model settings in config.toml
-- Run ```python run.py```
+- Configure model by editing config.toml in text editor
+- Run ```python run.py``` to run model and graph
 <br>
   
 - Access the simulation results data in ```temperatures_C``` variable in the main code in run.py
@@ -19,4 +21,4 @@
 - Model uses x=0 as center point of plane
 
 ## Issues
-- Simulation goes weird when dx is less than 0.005m
+- Simulation goes weird when dx is configured to less than 0.005m
