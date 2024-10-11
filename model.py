@@ -27,18 +27,18 @@ def time_step_calc(cells_list, prev_temperatures_list, dt, dx, Heat_gen, k, rho,
     # First, calculate all dT/dx
     # forward difference for discretising derivative at left bounds
     dTdx_list[0] = (prev_temperatures_list[1] - prev_temperatures_list[0])/dx
-    # backward difference for discretising derivative at left bounds
+    # backward difference for discretising derivative at right bounds
     dTdx_list[-1] = (prev_temperatures_list[-1] - prev_temperatures_list[-2])/dx
     for cell_index, cell_location in enumerate(cells_list):
         if cell_index == 0 or cell_index == range(len(cells_list))[-1]:
             continue
         # central difference for discretising derivative
         dTdx_list[cell_index] = ((prev_temperatures_list[cell_index+1]-prev_temperatures_list[cell_index])/dx + (prev_temperatures_list[cell_index]-prev_temperatures_list[cell_index-1])/dx)/2
-        # Using calculated dT/dx values, calculate d2T/dx2 at previous time step for all points
     # Next, calculate all d2T/dx2
+    # Using calculated dT/dx values, calculate d2T/dx2 at previous time step for all points.
     # forward difference for discretising derivative at left bounds
     d2Tdx2_list[0] = (dTdx_list[1] - dTdx_list[0])/dx
-    # backward difference for discretising derivative at left bounds
+    # backward difference for discretising derivative at right bounds
     d2Tdx2_list[-1] = (dTdx_list[-1] - dTdx_list[-2])/dx
     for cell_index, cell_location in enumerate(cells_list):
         if cell_index == 0 or cell_index == range(len(cells_list))[-1]:
