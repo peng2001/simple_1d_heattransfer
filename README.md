@@ -19,6 +19,3 @@
 - Access the simulation results data in ```temperatures_C``` variable in the main code in run.py
   - For example, ```temperatures_C[3][7]``` is the 3rd time step, at the 7th discretised x distance
 - Model uses x=0 as center point of plane
-
-## Issues
-- Simulation goes weird when dx is configured to less than 0.005m
