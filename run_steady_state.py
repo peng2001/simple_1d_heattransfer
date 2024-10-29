@@ -19,7 +19,7 @@ def graphing_3d(temperatures_list, time_record, cells_list):
     fig, ax = plt.subplots()
     ax.plot(x[-1], temperature_data[-1])
     # Adding axis labels
-    ax.set_xlabel('x (m)')
+    ax.set_xlabel('x (mm)')
     ax.set_ylabel('Temperature (Degrees C)')
     ax.set_title('1D Temperature')
     plt.show()

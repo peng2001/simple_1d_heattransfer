@@ -20,7 +20,7 @@ def graphing_3d(temperatures_list, time_record, cells_list):
     ax = fig.add_subplot(111, projection='3d')
     ax.plot_surface(x, t, temperature_data, cmap='viridis')
     # Adding axis labels
-    ax.set_xlabel('x (m)')
+    ax.set_xlabel('x (mm)')
     ax.set_ylabel('Time (s)')
     ax.set_zlabel('Temperature (Degrees C)')
     ax.set_title('1D Temperature')

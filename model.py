@@ -18,6 +18,7 @@ def run_model(time_record, cells_list, cells_temperatures_init, Temperature_side
 
 
 def time_step_calc(cells_list, prev_temperatures_list, dt, dx, Heat_gen, k, rho, cp):
+    k=k*1000 # convert k to W/(mm*K) to work with using mm units
     # Equation: dT/dt = alpha * (d2T/dx2 + egen/k)
     dTdt_list = np.zeros(len(cells_list)) # initialise as zeros first
     new_temperature_list = np.zeros(len(cells_list))

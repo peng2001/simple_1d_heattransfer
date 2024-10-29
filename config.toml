@@ -1,9 +1,9 @@
 # Simulation Setup
 dt = 1                        # seconds, time step of simulation (not used for steady state simulation)
-total_time = 1000               # seconds, total time simulated (not used for steady state simulation)
-dx = 0.005                      # meters, discretisation of cell in 1D
+total_time = 5000               # seconds, total time simulated (not used for steady state simulation)
+dx = 0.2                      # mm, discretisation of cell in 1D
 # Cell parameters
-Thickness = 0.2                 # metres, thickness of cell to simulate; thickness = 2*L
+Thickness = 15                 # mm, thickness of cell to simulate; thickness = 2*L
 Specific_heat = 1000            # J/(kg*K), specific heat of cell
 Conductivity = 0.5              # W/(m*K), through-plane conductivity of cell
 Density = 30                    # kg/m^3, weight density; used to calculate diffusivity (diffusivity = conductivity/(density*specificheat))
